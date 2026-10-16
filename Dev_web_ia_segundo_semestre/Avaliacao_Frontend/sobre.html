@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <tittle>Sobre</tittle>
+    <link rel="stylessheet" href="styles/sobre.css">
+</head>
+<body>
+    <header>
+        <h2>Avaliação Front</h2>
+
+        <nav>
+            <a href="index.html">Login</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="exercicio.html">Exercicio</a>
+        </nav>
+    </header>
+    <main>
+        <h1>
+            Desenvolvimento web
+        </h1>
+        <p class="introdução">
+            Conheça a importancia das principais tecnologias usadas no desenvolvimento web.
+        </p>
+        <div class="botoes">
+            <button
+            onclick="mostraHTML()">
+            HTML
+        </button>
+        <button
+        onclick="mostrarCSS()">
+        CSS
+    </button>
+    <button
+    onclick="mostrarJS()">
+    JavaScript    
+    </button>
+        </div>
+        <div class="conteudo"
+        <h2 id="titulo">
+            Escolha uma opção
+        </h2>
+        <p id="texto">
+            Escolha uma das opções pra ver informações sobre HTML, CSS ou JavaScript.
+        </p>
+        </div>
+    </main>
+    <footer>
+        <p>
+            Desenvolvimento web 2026 - Renan
+        </p>
+    </footer>
+    <script>
+        function mostrarHtml(){
+            document.getElementbyld("texto")
+            .innerHTML= "O html é usado pra fazer a estrutura da pagina WEB, usamos pra criar titulo, textos, imagens, formulario, botão, varias coisas. saber usar o HTML é uma das coisa mais importante pra quem quer trabalhar com frotn-end ou desenvolver paginas WEB tals."
+        }
+        function mostrarCSS(){
+            document.getElementByld("titulo")
+            .innerHTML="CSS";
+
+            document.getElementById("texto")
+            .innerHTML= "O CSS é quem manda na aparencia, estiliza a pagina, deixa ela bonita pro cliente ficar satisfeito com o resultado, muito usado pra criar uma pagina mais bonita, deixar ela visualmente agradavel, e n uma tela tod apoluida."
+        }
+        function mostrarJS(){
+            document.getElementById("titulo")
+            .innerHTML="JS(JavaScript)";
+
+            document.getElementById("texto")
+            .innerHTML= " O JavaScript é pra gente fazer as coisas terem funcionalidades, por exemplo um botão, somente com HTML e CSS ele n funciona, não faz a ação que é descrita nele, mas voce criando o JavaScript daquele botão, ele vai fazer a ação. tambem da pra fazer calculo com ele, validar formularios, é importante pra pagina ter uma interação."
+        }
+    </script>
+</body>
+</html>

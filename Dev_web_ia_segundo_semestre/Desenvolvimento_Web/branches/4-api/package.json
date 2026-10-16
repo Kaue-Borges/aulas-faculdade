@@ -1,0 +1,20 @@
+{
+  "name": "segundo_semestre_des_web",
+  "version": "1.0.0",
+  "description": "My first API",
+  "homepage": "https://github.com/Kaue-Borges/Segundo_semestre_Des_Web#readme",
+  "bugs": {
+    "url": "https://github.com/Kaue-Borges/Segundo_semestre_Des_Web/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaue-Borges/Segundo_semestre_Des_Web.git"
+  },
+  "license": "ISC",
+  "author": "Borges",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  }
+}

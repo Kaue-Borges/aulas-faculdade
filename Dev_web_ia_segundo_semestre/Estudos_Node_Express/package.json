@@ -1,0 +1,24 @@
+{
+  "name": "estudos-node-express",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Exercícios de JavaScript, Node.js e Express para aprender APIs passo a passo.",
+  "type": "module",
+  "scripts": {
+    "hello": "node src/01-fundamentos/hello-world.js",
+    "dobro": "node src/02-calculadora/01-dobro.js",
+    "triplo": "node src/02-calculadora/02-triplo.js",
+    "soma": "node src/02-calculadora/03-soma.js",
+    "soma:validacao": "node src/02-calculadora/04-soma-validacao.js",
+    "soma:validacao:nan": "node src/02-calculadora/05-soma-validacao-nan.js",
+    "soma:validacao:completa": "node src/02-calculadora/06-soma-validacao-completa.js",
+    "params:query": "node src/03-parametros/query-params.js",
+    "params:rota": "node src/03-parametros/route-params.js",
+    "post:produtos": "node src/04-crud/01-post-produtos.js",
+    "post:cadastro": "node src/04-crud/02-cadastro-produtos.js",
+    "post:listar": "node src/04-crud/03-listar-produtos.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

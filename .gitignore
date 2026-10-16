@@ -1,0 +1,36 @@
+# Ambiente e cache
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+node_modules/
+.gradle/
+.idea/
+.vscode/
+*.class
+*.jar
+*.exe
+*.o
+*.obj
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Arquivos privados
+.env
+.env.*
+!.env.example
+credentials.json
+secrets.json
+token.json
+*.pem
+*.key
+chrome-profile*/
+playwright/.auth/
+
+# Builds gerados
+dist/
+build/
+target/
+coverage/

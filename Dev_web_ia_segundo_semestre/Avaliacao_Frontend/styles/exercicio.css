@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #eeeeee;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #242424;
+    color: white;
+    padding: 20px 50px;
+}
+
+header h2 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+main {
+    width: 400px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    width: 95%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #242424;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#resultado {
+    line-height: 30px;
+}

@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #1b1b18;
+
+    color: white;
+}
+
+
+/* divide a tela em formulario e imagem */
+main {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+}
+
+
+/* lado esquerdo */
+.lado-formulario {
+    width: 55%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+
+    background-color: #1b1818;
+}
+
+
+/* caixa preta do formulario */
+.cadastro {
+    width: 100%;
+    max-width: 560px;
+
+    background-color: #0d0d0d;
+
+    padding: 30px;
+
+    border-radius: 5px;
+}
+
+
+.cadastro h1 {
+    font-size: 22px;
+
+    margin-bottom: 20px;
+
+    color: #f2f2f2;
+}
+
+
+.cadastro h1::first-letter {
+    color: #ffbb22;
+}
+
+
+.cadastro p {
+    font-size: 13px;
+
+    line-height: 20px;
+
+    color: #bbbbbb;
+
+    margin-bottom: 20px;
+}
+
+
+/* campos */
+.campo {
+    width: 100%;
+
+    margin-bottom: 12px;
+}
+
+
+label {
+    display: block;
+
+    font-size: 12px;
+
+    margin-bottom: 5px;
+
+    color: #d4d4d4;
+}
+
+
+input {
+    width: 100%;
+
+    height: 36px;
+
+    padding: 0 10px;
+
+    background-color: #252222;
+
+    border: 1px solid #a5a5a5;
+
+    color: white;
+
+    border-radius: 3px;
+}
+
+
+input::placeholder {
+    color: #b0b0b0;
+}
+
+
+input:focus {
+    outline: none;
+
+    border-color: #ffbe2e;
+}
+
+
+/* campos lado a lado */
+.linha {
+    display: flex;
+
+    gap: 12px;
+}
+
+
+.linha .campo {
+    width: 50%;
+}
+
+
+/* botão */
+button {
+    width: 100%;
+
+    height: 42px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    background-color: #ffbd2e;
+
+    color: #111;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #e9aa20;
+}
+
+
+/* lado direito */
+.lado-imagem {
+    width: 45%;
+
+    background-image: url("../imgs/viagem.png");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+/* celular */
+@media (max-width: 700px) {
+
+    main {
+        display: block;
+
+        min-height: 100vh;
+
+        background-image: url("../imgs/viagem.png");
+
+        background-size: cover;
+
+        background-position: center;
+
+        padding: 25px 15px;
+    }
+
+
+    .lado-formulario {
+        width: 100%;
+
+        min-height: calc(100vh - 50px);
+
+        padding: 0;
+
+        background-color: transparent;
+    }
+
+
+    .cadastro {
+        max-width: 420px;
+
+        padding: 25px 20px;
+
+        background-color: rgba(10, 10, 10, 0.94);
+    }
+
+
+    /* no celular a imagem lateral desaparece
+       porque ela virou o fundo */
+    .lado-imagem {
+        display: none;
+    }
+
+
+    .linha {
+        display: block;
+    }
+
+
+    .linha .campo {
+        width: 100%;
+    }
+
+
+    .cadastro h1 {
+        font-size: 20px;
+    }
+
+}
